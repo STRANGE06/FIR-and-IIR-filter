@@ -4,7 +4,7 @@ This project implements real-time **FIR** and **IIR** filters on a **ZedBoard (Z
 
 ---
 
-## 🎯 Features
+##  Features
 
 - **Real-time FIR and IIR digital filtering**
 - Audio input via **PMOD MIC**
@@ -15,7 +15,7 @@ This project implements real-time **FIR** and **IIR** filters on a **ZedBoard (Z
 
 ---
 
-## 🛠️ Hardware Architecture
+##  Hardware Architecture
 
 - **PMOD MIC** → ADC (onboard) → FPGA
 - **FPGA**:
@@ -25,7 +25,7 @@ This project implements real-time **FIR** and **IIR** filters on a **ZedBoard (Z
 - **PMOD DA2** → DAC interface (SPI-like protocol)
 - **Clock divider** to match sampling frequency
 
-## 📂 Directory Structure
+##  Directory Structure
 ├── src/
 │ ├── fir_filter.v # FIR filter module
 │ ├── iir_filter.v # IIR filter module
@@ -34,7 +34,7 @@ This project implements real-time **FIR** and **IIR** filters on a **ZedBoard (Z
 │ ├── clkDiv25en.v # Clock divider
 
 
-## 🔍 How It Works
+##  How It Works
 
 1. **Input**: PMOD MIC samples are digitized and fed into the filter module.
 2. **Filtering**: Either FIR or IIR filter is selected. Coefficients can be preloaded or changed dynamically.
@@ -43,13 +43,13 @@ This project implements real-time **FIR** and **IIR** filters on a **ZedBoard (Z
 
 ---
 
-## 📊 Filter Comparison
+##  Filter Comparison
 
 Filter output was validated against MATLAB/NumPy implementations for accuracy. The hardware output closely follows software-generated signals, ensuring correctness and stability.
 
 ---
 
-## ✅ Synthesis & Testing
+##  Synthesis & Testing
 
 - **Tool Used**: Vivado 2023.1
 - **Target Device**: `xc7z020clg484-1`
@@ -58,13 +58,9 @@ Filter output was validated against MATLAB/NumPy implementations for accuracy. T
 
 ---
 
-## 📜 License
 
-This project is open-source under the MIT License.
 
----
-
-## 👤 Author
+##  Author
 
 Prathamesh Pise  
 B.E. (Hons.) Electronics and Instrumentation  
