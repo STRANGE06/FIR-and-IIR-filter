@@ -25,14 +25,6 @@ This project implements real-time **FIR** and **IIR** filters on a **ZedBoard (Z
 - **PMOD DA2** → DAC interface (SPI-like protocol)
 - **Clock divider** to match sampling frequency
 
-##  Directory Structure
-├── src/
-│ ├── fir_filter.v # FIR filter module
-│ ├── iir_filter.v # IIR filter module
-│ ├── DA2_Top.v # Top-level module integrating DA2 output
-│ ├── da2_dual.v # DAC communication module
-│ ├── clkDiv25en.v # Clock divider
-
 
 ##  How It Works
 
@@ -51,7 +43,7 @@ Filter output was validated against MATLAB/NumPy implementations for accuracy. T
 
 ##  Synthesis & Testing
 
-- **Tool Used**: Vivado 2023.1
+- **Tool Used**: Vivado 2021.2
 - **Target Device**: `xc7z020clg484-1`
 - **Simulation**: Testbenches for both FIR and IIR filters validate functional correctness.
 - **Synthesis**: Successfully synthesized and deployed on ZedBoard
